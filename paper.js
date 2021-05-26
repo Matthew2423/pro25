@@ -18,7 +18,7 @@ density:1.2
 
     
     push()
-    translate(this.body.postition.x,this.body.postition.y)
+    translate(this.body.position.x,this.body.position.y)
 imageMode(CENTER);
 image(this.image,0,0,this.r,this.r);
 pop();

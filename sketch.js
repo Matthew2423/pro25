@@ -26,6 +26,7 @@ function setup() {
 }
 
 
+
 function draw() {
   rectMode(CENTER);
   background(230);
@@ -36,4 +37,9 @@ function draw() {
   
 
 }
+function keyPressed(){
+	if(keyCode === UP_ARROW){
 
+		Matter.Body.applyForce(paperObj.body,paperObj.body.position,{x:130,y:-145});
+}
+}
